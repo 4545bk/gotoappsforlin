@@ -5,42 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Your Option</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: #f9f9f9;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #ffffff;
+            overflow: hidden;
         }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 20px 40px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
         h1 {
-            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffdd59;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        a {
-            display: inline-block;
-            margin: 15px;
-            padding: 15px 30px;
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .buttons a {
             text-decoration: none;
-            font-size: 18px;
+            font-size: 1.2rem;
             font-weight: bold;
             color: #fff;
-            background: #007BFF;
-            border-radius: 5px;
-            transition: background 0.3s ease;
+            background: #ff6f61;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 111, 97, 0.4);
         }
-        a:hover {
-            background: #0056b3;
+
+        .buttons a:hover {
+            transform: scale(1.05);
+            background: #fa5a46;
+        }
+
+        .buttons a:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
 <body>
-    <h1>Welcome! Choose an option:</h1>
-    <a href="https://linaagencyvip.vercel.app/" target="_blank">Go to Website</a>
-    <a href="https://t.me/betrisho" target="_blank">Go to Telegram</a>
-
+    <div class="container">
+        <h1>Welcome! Choose an Option:</h1>
+        <div class="buttons">
+            <a href="https://bit.ly/3CWMV6A" target="_blank" rel="noopener noreferrer">Go to Website</a>
+            <a href="https://bit.ly/4i3zgLf" target="_blank" rel="noopener noreferrer">Go to Telegram</a>
+        </div>
+    </div>
 </body>
 </html>
